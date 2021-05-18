@@ -1,0 +1,30 @@
+.title {
+  font-family: Roboto;
+  font-size: 50px;
+  color: #ff4040;
+  text-align: center;
+  margin: auto;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+.options {
+  height: auto;
+}
+.centerButtons {
+  margin: 0;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0%);
+}
+
+.score {
+  margin-left: 15px;
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../Roboto-Regular.ttf);
+}
+body {
+  background-color: #36f76a;
+}
