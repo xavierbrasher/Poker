@@ -8,6 +8,23 @@
   margin-bottom: 15px;
   padding: 10px;
 }
+#moneyBit {
+  visibility: hidden;
+}
+#moneyCounter {
+  margin: 5px;
+  font-size: 50px;
+}
+#backButton1 {
+  padding: 7px;
+}
+#findMatchBit {
+  visibility: hidden;
+}
+#findingMatch {
+  margin: 5px;
+  font-size: 50px;
+}
 .options {
   height: auto;
 }
@@ -28,7 +45,7 @@
 .firstButton {
   font-size: 17px;
 }
-.score {
+.money {
   margin-left: 10px;
 }
 @font-face {

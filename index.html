@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Poker</title>
-    <script src="js/index.js" type="text/javascript"></script>
   </head>
   <body>
-    <h1 id="title" class="title">Welcome to Poker</h1>
-    <div class="options">
-      <div class="centerButtons">
-        <button id="button1" onclick="test()" class="firstButton button">
-          Find Match
-        </button>
-        <button id="button2" class="score firstButton button">Score</button>
+    <main id="main">
+      <h1 id="title" class="title">Welcome to Poker</h1>
+      <div class="options">
+        <div class="centerButtons">
+          <button id="button1" onclick="findMatch()" class="firstButton button">
+            Find Match
+          </button>
+          <button
+            id="button2"
+            onclick="findmoney()"
+            class="money firstButton button"
+          >
+            How rich are you?
+          </button>
+        </div>
       </div>
+    </main>
+    <div class="title" id="moneyBit">
+      <h1 id="moneyCounter">$</h1>
+      <input type="text" class="button" id="textArea1"></input>
+      <input type="button" class="button" id="saveButton" onclick="saveButton()" value="sumbit"></input>
+      <button
+        id="backButton1"
+        class="button"
+        onclick="backButtonmoney()"
+      >
+        Back
+      </button>
     </div>
-    
+    <div class="title" id="findMatchBit">
+      <h1 id="findingMatch">Finding Match...</h1>
+      <button
+        id="backButton1"
+        class="centerButtons button"
+        onclick="backButtonMatch()"
+      >
+        Back
+      </button>
+    </div>
   </body>
 </html>
